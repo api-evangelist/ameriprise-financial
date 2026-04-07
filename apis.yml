@@ -1,16 +1,14 @@
 aid: ameriprise-financial
-url: 
-  https://raw.githubusercontent.com/api-evangelist/ameriprise-financial/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/ameriprise-financial/refs/heads/main/apis.yml
 apis:
   - aid: ameriprise-financial:website
     name: Ameriprise Financial Website
     tags:
       - Financial Planning
-      - Wealth Management
-      - Insurance
       - Financial Services
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+      - Insurance
+      - Wealth Management
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://www.ameriprise.com
     humanURL: https://www.ameriprise.com
     properties:
