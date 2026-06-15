@@ -1,0 +1,20 @@
+{
+  "item": [],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.ameriprise.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "a9725754-c1fa-42d1-a2f7-bf7371fc2034",
+    "name": "Ameriprise Financial API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Ameriprise Financial provides financial planning and wealth management services. This is a placeholder specification as Ameriprise Financial does not currently publish a public developer API. Third-party data access is available through aggregators like Plaid.\n\nContact Support:\n Name: Ameriprise Financial",
+      "type": "text/plain"
+    }
+  }
+}
