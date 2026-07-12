@@ -44,6 +44,8 @@ created: '2024-01-01'
 modified: '2026-04-19'
 specificationVersion: '0.18'
 common:
+  - type: DomainSecurity
+    url: security/ameriprise-financial-domain-security.yml
   - type: Portal
     url: https://www.ameriprise.com
   - type: Blog
