@@ -1,0 +1,14 @@
+{
+  "provider": "ameriprise-financial",
+  "sources": [
+    "ameriprise.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived ameriprise.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
