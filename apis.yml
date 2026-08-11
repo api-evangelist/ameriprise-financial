@@ -16,7 +16,7 @@ apis:
       - type: Website
         url: https://www.ameriprise.com
       - type: OpenAPI
-        url: openapi/ameriprise.yml
+        url: openapi/_original/ameriprise.yml
     description: >-
       Ameriprise Financial is a diversified financial services company
       providing financial planning, products, and services including wealth
