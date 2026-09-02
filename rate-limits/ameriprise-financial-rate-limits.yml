@@ -4,39 +4,39 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Ameriprise Financial
 providerId: ameriprise-financial
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
+generated: '2026-09-02'
+modified: '2026-09-02'
+method: searched
+source: https://www.ameriprise.com/llms.txt
+reconciled: true
+limit_count: 0
 tags:
   - Financial Services
   - Wealth Management
   - Rate Limiting
 description: >-
-  Ameriprise Financial does not publish a developer API or rate-limit
-  documentation. There is no public throttling policy, request-per-second
-  ceiling, or 429 contract to reconcile. Any consumption of Ameriprise account
-  data via third-party aggregators (Plaid, etc.) is governed by the
-  aggregator's own rate limits, not Ameriprise's.
+  Ameriprise Financial publishes no developer API, so there is no throttling
+  policy, requests-per-window ceiling, burst allowance, 429 contract or
+  RateLimit-* / X-RateLimit-* response-header convention to record. Re-checked
+  2026-09-02: the provider's own /llms.txt site index (HTTP 200) lists no
+  developer or API section, and no developer/API host resolves in DNS.
 notes: >-
-  No public Ameriprise rate-limit documentation exists. Limits below are not
-  enforced ceilings; they are placeholders so downstream tooling can iterate
-  the structure.
+  limit_count is 0 because Ameriprise documents no limits, not because the docs
+  were unreachable. The prior revision carried a synthetic placeholder limit row
+  and an invented policy block from the 2026-05-04 bulk sweep; both asserted a
+  rate-limit surface Ameriprise never published and have been removed. Consumers
+  reading Ameriprise account data through an aggregator (Plaid and peers) are
+  governed by that aggregator's published limits, not Ameriprise's.
 sources:
-  - https://www.ameriprise.com
+  - url: https://www.ameriprise.com/llms.txt
+    status: 200
+  - url: https://www.ameriprise.com/openapi.json
+    status: 404
+  - url: https://api.ameriprise.com/
+    status: 'DNS does not resolve'
 responseCodes: {}
-limits:
-  - name: No Public Rate Limit Documentation
-    scope: account
-    metric: varies
-    limit: 'see provider; not publicly documented'
-policies:
-  - name: No Public Policy
-    description: >-
-      Ameriprise Financial does not publish a developer rate-limit policy.
-      Consumers integrating via aggregators should follow the aggregator's
-      published throttling guidance.
+limits: []
+policies: []
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com

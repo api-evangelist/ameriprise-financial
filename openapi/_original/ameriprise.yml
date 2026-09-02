@@ -1,16 +1,66 @@
 openapi: 3.1.0
+# ---------------------------------------------------------------------------
+# NOT AN AMERIPRISE CONTRACT. THIS IS AN API EVANGELIST SCAFFOLD.
+# Ameriprise Financial does not publish an OpenAPI, Swagger, GraphQL SDL,
+# AsyncAPI, WSDL, .proto or Postman collection anywhere. This file was written
+# by the 2026-05 bulk sweep and has zero paths and zero operations; it describes
+# nothing Ameriprise ships. Re-verified 2026-09-02 (see x-verification below).
+# Its apis.yml `type: OpenAPI` pointer has been REMOVED so it can no longer be
+# read as evidence that Ameriprise publishes a machine-readable contract.
+# Do not derive authentication, scopes, errors, conventions, data-model, skills,
+# overlays or an MCP tool list from this file — there is nothing in it.
+# ---------------------------------------------------------------------------
 info:
-  title: Ameriprise Financial API
+  title: API Evangelist scaffold — Ameriprise Financial (NOT a provider contract)
   description: >-
-    Ameriprise Financial provides financial planning and wealth management
-    services. This is a placeholder specification as Ameriprise Financial
-    does not currently publish a public developer API. Third-party data
-    access is available through aggregators like Plaid.
-  version: 1.0.0
+    Placeholder written by API Evangelist, not by Ameriprise Financial.
+    Ameriprise publishes no public developer API. This document has no paths and
+    no operations and must not be treated as a contract. Third-party access to
+    Ameriprise account data is brokered by aggregators (Plaid and peers) under
+    those aggregators' own contracts, not an Ameriprise-published API.
+  version: 0.0.0
   contact:
-    name: Ameriprise Financial
-    url: https://www.ameriprise.com
-servers:
-  - url: https://www.ameriprise.com
-    description: Ameriprise Financial Website
+    name: API Evangelist
+    url: https://apievangelist.com
+servers: []
 paths: {}
+x-api-evangelist-scaffold: true
+x-provenance:
+  method: generated
+  generated_by: API Evangelist bulk sweep
+  generated: '2026-05-04'
+  is_provider_published: false
+x-verification:
+  checked: '2026-09-02'
+  method: probed
+  finding: no machine-readable contract published on any Ameriprise host
+  probes:
+    - url: https://www.ameriprise.com/openapi.json
+      status: 404
+    - url: https://www.ameriprise.com/openapi.yaml
+      status: 404
+    - url: https://www.ameriprise.com/swagger.json
+      status: 404
+    - url: https://www.ameriprise.com/api-docs
+      status: 404
+    - url: https://www.ameriprise.com/graphql
+      status: 404
+    - url: https://www.ameriprise.com/api
+      status: 404
+    - url: https://www.ameriprise.com/mcp
+      status: 404
+    - url: https://developer.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://api.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://apis.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://developers.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://dev.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://partner.ameriprise.com/
+      status: DNS does not resolve
+    - url: https://www.ameriprise.com/llms.txt
+      status: 200
+      note: served, but indexes only marketing/advice content — no developer or API section

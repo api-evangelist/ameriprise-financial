@@ -4,11 +4,12 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Ameriprise Financial
 providerId: ameriprise-financial
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
+generated: '2026-09-02'
+modified: '2026-09-02'
+method: searched
+source: https://www.ameriprise.com/llms.txt
+reconciled: true
+plan_count: 0
 tags:
   - Financial Services
   - Wealth Management
@@ -16,42 +17,34 @@ tags:
   - Insurance
   - Annuities
 description: >-
-  Ameriprise Financial does not currently publish a public developer API or
-  associated pricing surface. Client account data is reachable via third-party
-  aggregators (e.g. Plaid), whose own commercial terms govern access. There is
-  no Ameriprise-issued plan tier, free quota, metered request price, or
-  enterprise SKU to reconcile.
+  Ameriprise Financial publishes no developer API and therefore no API plan,
+  tier, quota, metered request price or enterprise SKU. This was re-checked on
+  2026-09-02 against the provider's own machine-readable site index
+  (https://www.ameriprise.com/llms.txt, HTTP 200, 13,776 bytes) which enumerates
+  every public section of www.ameriprise.com — What We Do, Products, Financial
+  Goals & Priorities, News & Research, Contact & Customer Service — and contains
+  no developer, API, integration or partner-technology section of any kind.
+  Candidate developer hosts (developer., api., apis., developers., dev.,
+  partner..ameriprise.com) do not resolve in DNS. Ameriprise's published fee
+  pages price ADVISORY SERVICES (financial planning fees, Achiever Circle
+  membership), which are not API plans and are deliberately excluded.
 notes: >-
-  No public Ameriprise developer plans exist at the time of authoring. Pricing
-  for Ameriprise advisory services (Ameriprise Achiever Circle, etc.) is not an
-  API plan and is intentionally omitted. If Ameriprise launches a public API
-  program, replace this document with reconciled tier data.
+  plan_count is 0 because there is nothing to record, not because the pricing
+  page was unreachable. The prior revision of this file carried a synthetic
+  placeholder plan row ("No Public API Program") written by the 2026-05-04 bulk
+  sweep; that row asserted a plan structure Ameriprise never published and has
+  been removed. Any consumer reaching Ameriprise account data does so through a
+  third-party aggregator (Plaid and peers), under the aggregator's commercial
+  terms, not Ameriprise's.
 sources:
-  - https://www.ameriprise.com
-  - https://www.ameriprise.com/contact-us/
-plans:
-  - id: ameriprise-financial-no-public-api
-    name: No Public API Program
-    type: enterprise
-    description: >-
-      Placeholder entry. Ameriprise Financial does not publish a developer API,
-      pricing page, or API plan catalog. Any integration is bilateral and
-      handled via partnerships, vendor onboarding, or third-party aggregators.
-    entries:
-      - label: Access
-        description: Bilateral / partner-only; not advertised publicly
-        name: access
-        type: flat
-        metric: varies
-        limit: -1
-        timeFrame: usage
-        geo: US
-        unit: 1
-        price: 'contact provider'
-        userMultiplied: false
-    elements:
-      - name: Bilateral Partnership
-      - name: Third-Party Aggregator (e.g. Plaid)
+  - url: https://www.ameriprise.com/llms.txt
+    status: 200
+  - url: https://www.ameriprise.com/financial-planning/financial-advice-services-costs
+    status: 200
+    note: advisory service fees, not an API plan
+  - url: https://developer.ameriprise.com/
+    status: 'DNS does not resolve'
+plans: []
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com

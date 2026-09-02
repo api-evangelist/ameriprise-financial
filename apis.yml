@@ -21,8 +21,6 @@ apis:
     properties:
       - type: Website
         url: https://www.ameriprise.com
-      - type: OpenAPI
-        url: openapi/_original/ameriprise.yml
     description: >-
       Ameriprise Financial is a diversified financial services company
       providing financial planning, products, and services including wealth
@@ -79,23 +77,27 @@ tags_raw:
   - Financial Services
   - Fortune 500
 created: '2024-01-01'
-modified: '2026-04-19'
+modified: '2026-09-02'
 specificationVersion: '0.23'
 common:
   - type: DomainSecurity
     url: security/ameriprise-financial-domain-security.yml
-  - type: Portal
+  - type: Website
     url: https://www.ameriprise.com
+  - type: LLMsTxt
+    url: llms/ameriprise-financial-llms.txt
+  - type: Login
+    url: https://www.ameriprise.com/client-login
+  - type: Legal
+    url: https://www.ameriprise.com/legal/disclosures
   - type: Blog
-    url: https://www.ameriprise.com/financial-goals-priorities/
+    url: https://www.ameriprise.com/financial-goals-priorities
   - type: PrivacyPolicy
-    url: https://www.ameriprise.com/legal/privacy-policy/
+    url: https://www.ameriprise.com/privacy-security-fraud/internet-privacy-statement
   - type: TermsOfService
-    url: https://www.ameriprise.com/legal/terms-of-use/
-  - type: Security
-    url: https://www.ameriprise.com/privacy-security/
+    url: https://www.ameriprise.com/legal/website-rules
   - type: Support
-    url: https://www.ameriprise.com/contact-us/
+    url: https://www.ameriprise.com/customer-service/contact
   - type: X
     url: https://twitter.com/Ameriprise
   - type: LinkedIn
@@ -147,3 +149,31 @@ common:
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
+x-enrichment:
+  date: '2026-09-02'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Ameriprise Financial serves a real /llms.txt (HTTP 200) that indexes its entire
+    public site, and that index contains no developer, API, integration or partner
+    section at all; every candidate developer host (developer., api., apis.,
+    developers., dev., partner..ameriprise.com) fails to resolve in DNS, and
+    /openapi.json, /swagger.json, /api-docs, /graphql and /mcp all 404 on
+    www.ameriprise.com — the company ships client software only, not a developer
+    program.
+  evidence:
+    - url: https://www.ameriprise.com/llms.txt
+      status: 200
+    - url: https://www.ameriprise.com/openapi.json
+      status: 404
+    - url: https://www.ameriprise.com/graphql
+      status: 404
+    - url: https://www.ameriprise.com/.well-known/agent-card.json
+      status: 404
+    - url: https://developer.ameriprise.com/
+      status: 'DNS does not resolve'
+  checked: '2026-09-02'
