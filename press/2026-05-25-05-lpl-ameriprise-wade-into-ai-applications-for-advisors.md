@@ -1,7 +1,9 @@
 ---
 title: LPL, Ameriprise wade into AI applications for advisors
 url: https://www.investmentnews.com/fintech/lpl-ameriprise-wade-into-ai-applications-for-advisors/240737
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Ameriprise Financial" press release artificial intelligence'
 position: 5
 source: serpapi-google
