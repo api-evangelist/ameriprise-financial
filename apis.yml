@@ -5,7 +5,7 @@ apis:
     name: Ameriprise Financial Website
     tags:
       - Financial Planning
-      - Financial-Services
+      - Financial Services
       - Insurance
       - Wealth Management
       - Retirement
@@ -15,8 +15,8 @@ apis:
       - Insurance
       - Wealth Management
       - Retirement
+      - Financial-Services
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.ameriprise.com
     humanURL: https://www.ameriprise.com
     properties:
       - type: Website
@@ -65,7 +65,7 @@ tags:
   - Insurance
   - Annuities
   - Investment Management
-  - Financial-Services
+  - Financial Services
   - Fortune 500
 tags_raw:
   - Financial Planning
@@ -76,6 +76,7 @@ tags_raw:
   - Investment Management
   - Financial Services
   - Fortune 500
+  - Financial-Services
 created: '2024-01-01'
 modified: '2026-09-02'
 specificationVersion: '0.23'
