@@ -1,4 +1,4 @@
-# Ameriprise Financial (ameriprise-financial)
+# Ameriprise Financial
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,63 +66,110 @@
 
 Get financial planning advice and retirement investment advice from Ameriprise financial advisors at ameriprise.com. Ameriprise Financial is a diversified financial services company offering comprehensive financial planning, wealth management, retirement planning, investment management, insurance, and annuities through a nationwide network of financial advisors.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/ameriprise-financial/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/ameriprise-financial/refs/heads/main/apis.yml)
+**Areas:** Financial Planning · Wealth Management · Retirement · Insurance · Annuities · Investment Management · Financial Services · Fortune 500
 
-## Tags
+## Ameriprise Financial on APIs.io
 
-- Financial Planning
-- Wealth Management
-- Retirement
-- Insurance
-- Annuities
-- Investment Management
-- Financial Services
+Everything profiled for Ameriprise Financial is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ameriprise-financial/](https://apis.io/providers/ameriprise-financial/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (1)
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-19
+- [Ameriprise Financial Website](https://apis.io/apis/ameriprise-financial/website/) — Ameriprise Financial is a diversified financial services company providing financial planning, products, and services including wealth management, asset…
 
-## APIs
+### Published properties
 
-### Ameriprise Financial Website
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Ameriprise Financial is a diversified financial services company providing financial planning, products, and services including wealth management, asset management, insurance, and annuities. The company does not currently offer a public developer API. Third-party access to Ameriprise account data is available through aggregators like Plaid.
+#### Collections (1)
 
-- **Human URL:** [https://www.ameriprise.com](https://www.ameriprise.com)
-- **Base URL:** `https://www.ameriprise.com`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Ameriprise Financial API](https://apis.io/collections/ameriprise-financial/open-ameriprise/)
 
-- Financial Planning
-- Financial Services
-- Insurance
-- Wealth Management
-- Retirement
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ameriprise Financial Domain Security](https://apis.io/security/ameriprise-financial/ameriprise-financial-domain-security/)
+- [Ameriprise Financial Vulnerability Disclosure](https://apis.io/security/ameriprise-financial/ameriprise-financial-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Ameriprise Financial Plans Pricing](https://apis.io/plans/ameriprise-financial/ameriprise-financial-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Ameriprise Financial Rate Limits](https://apis.io/rate-limits/ameriprise-financial/ameriprise-financial-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Ameriprise Financial Finops](https://apis.io/finops/ameriprise-financial/ameriprise-financial-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.ameriprise.com)
-- [OpenAPI](openapi/ameriprise.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/ameriprise.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ameriprise.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Support](https://www.ameriprise.com/customer-service/contact)
+- [Blog](https://www.ameriprise.com/financial-goals-priorities)
+- [Terms of service](https://www.ameriprise.com/legal/website-rules)
+- [Privacy policy](https://www.ameriprise.com/privacy-security-fraud/internet-privacy-statement)
 
-## Common Properties
+## API Evangelist rating
 
-- [Portal](https://www.ameriprise.com)
-- [Blog](https://www.ameriprise.com/financial-goals-priorities/)
-- [Privacy Policy](https://www.ameriprise.com/legal/privacy-policy/)
-- [Terms of Service](https://www.ameriprise.com/legal/terms-of-use/)
-- [Security](https://www.ameriprise.com/privacy-security/)
-- [Support](https://www.ameriprise.com/contact-us/)
-- [X (Twitter)](https://twitter.com/Ameriprise)
-- [LinkedIn](https://www.linkedin.com/company/ameriprise-financial)
-- [YouTube](https://www.youtube.com/ameriprise)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
+**Kin Score 12.7** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
 
-**FN:** API Evangelist
-**Email:** info@apievangelist.com
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ameriprise-financial/](https://apis.io/providers/ameriprise-financial/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ameriprise Financial: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ameriprise-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
